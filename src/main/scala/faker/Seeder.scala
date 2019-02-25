@@ -7,7 +7,6 @@ import scala.concurrent._
 import scala.concurrent.duration.Duration
 import scala.util.Random
 
-
 object Seeder extends App {
 
   val countriesRepository = new CountriesRepository()
@@ -28,7 +27,7 @@ object Seeder extends App {
       FakeTransaction(None, card, iban, amount, randCountry)
 
     })
-    .take(1000)
+    .take(2000)
 
   val fakeTransactionsRepository = new FakeTransactionsRepository()
   val f2 = fakeTransactionsRepository.createTable()

@@ -10,5 +10,5 @@ libraryDependencies += "com.github.azakordonets" % "fabricator_2.12" % "2.1.5"
 libraryDependencies ++= Seq(
   "com.typesafe.slick" %% "slick" % "3.3.0",
   "com.typesafe.slick" %% "slick-hikaricp" % "3.3.0",
-  "com.microsoft.sqlserver" % "mssql-jdbc" % "7.2.0.jre11" % Test
+  "com.microsoft.sqlserver" % "mssql-jdbc" % "7.2.0.jre8"
 )
